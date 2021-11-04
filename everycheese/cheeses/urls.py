@@ -21,4 +21,10 @@ urlpatterns = [
         view=views.CheeseDetailView.as_view(),
         name='detail'
     ),
+    # URL pattern for updating view
+    path(
+        route='<slug:slug>/update/',
+        view=views.CheeseUpdateView.as_view(),
+        name='update'
+    ),
 ]
